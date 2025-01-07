@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,8 +18,8 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5">COMPANY</p>
           <ul className="flex flex-col gap-1 text-gray-600">
-            <li>HOME</li>
-            <li>ABOUT US</li>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="about">ABOUT US</Link></li>
             <li>DELIVERY</li>
             <li>PRIVACY & POLICY</li>
           </ul>
